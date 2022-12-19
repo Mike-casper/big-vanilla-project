@@ -3,14 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { splitIntoWords } from './01-hello-tests/01';
+// import { splitIntoWords } from './01-hello-tests/01';
+import {sum} from "./03/03";
 
-const sentence = "Hello my friends!";
-const result = splitIntoWords(sentence);
-console.log(result);
-console.log(result[0] === "hello");
-console.log(result[1] === "my");
-console.log(result[2] === "friends");
+let a = sum(1,2);
+console.log(   a);
+
+// const sentence = "Hello my friends!";
+// const result = splitIntoWords(sentence);
+// console.log(result);
+// console.log(result[0] === "hello");
+// console.log(result[1] === "my");
+// console.log(result[2] === "friends");
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
