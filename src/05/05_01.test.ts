@@ -1,17 +1,17 @@
-import {ManType} from "./05_01";
+import {createGreetingMessage, ManType} from "./05_01";
 
 let people: Array<ManType> = [];
 
-beforeEach(()=>{
+beforeEach(() => {
     people = [
-        { name: 'Andrew Ivanov', age: 33 },
-        { name: 'Alexander Petrov', age: 24 },
-        { name: 'Dmitry Sidorov', age: 18 },
+        {name: "Andrew Ivanov", age: 33},
+        {name: "Alexander Petrov", age: 24},
+        {name: "Dmitry Sidorov", age: 18},
     ]
 })
 
-test("should get array of gteeting messages",()=>{
-    const messages = people.map( man => `Hello ${man.name.split(" ")[0]}. Welcome to IT-incubator`)
+test("should get array of gteeting messages", () => {
+    const messages = createGreetingMessage(people)
     expect(messages.length).toBe(3);
     expect(messages[0]).toBe("Hello Andrew. Welcome to IT-incubator");
 })
