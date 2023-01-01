@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {User} from "./05/06-callbacks";
 
 function App() {
   const names = ["Dimych", "Katya", "viktor", "Ignat"]
@@ -9,7 +10,8 @@ function App() {
   return (
       <div className={"App"}>
         <ul>
-          {lieElements}
+          {/*{lieElements}*/}
+            <User/>
         </ul>
     </div>
   );
